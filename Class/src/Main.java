@@ -57,9 +57,7 @@ public class Main {
                         }
                     }
 
-
                     cars.add(newCar);
-
                     System.out.println("Car added successfully!");
                     newCar.getVehicleInfo();
                     break;

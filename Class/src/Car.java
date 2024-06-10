@@ -14,9 +14,10 @@ public class Car extends Vehicle {
 
     @Override
     public void getVehicleInfo(){
+        System.out.println("Numer rejestracyjny: "+ registrationNumber);
         super.getVehicleInfo();
         System.out.println("Przebieg: "+ km);
-        System.out.println("Numer rejestracyjny: "+ registrationNumber);
+
 
     }
 }
