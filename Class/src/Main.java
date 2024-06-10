@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Main {
@@ -30,12 +31,32 @@ public class Main {
                     System.out.println("Please enter the color of the car: ");
                     newCar.color = scanner.nextLine();
 
-                    System.out.println("Please enter the price of the car: ");
-                    newCar.price = scanner.nextDouble();
+                    boolean validPriceInput  = false;
+                    while (!validPriceInput) {
+                        try {
+                            System.out.println("Please enter the price of the car: ");
+                            newCar.price = scanner.nextDouble();
+                            scanner.nextLine(); // Konsumowanie nowej linii po nextInt()
+                            validPriceInput = true;
+                        } catch (InputMismatchException e) {
+                            System.out.println("This field can only contain NUMBERS. Please try again.");
+                            scanner.nextLine(); // Konsumowanie błędnego wejścia
+                        }
+                    }
 
-                    System.out.println("Please enter the kilometers driven by the car: ");
-                    newCar.setKm(scanner.nextDouble());
-                    scanner.nextLine(); // Konsumowanie nowej linii po nextDouble()
+                    boolean validKmInput  = false;
+                    while (!validKmInput) {
+                        try {
+                            System.out.println("Please enter the kilometers driven by the car: ");
+                            newCar.setKm(scanner.nextDouble());
+                            scanner.nextLine(); // Konsumowanie nowej linii po nextInt()
+                            validKmInput = true;
+                        } catch (InputMismatchException e) {
+                            System.out.println("This field can only contain NUMBERS. Please try again.");
+                            scanner.nextLine(); // Konsumowanie błędnego wejścia
+                        }
+                    }
+
 
                     cars.add(newCar);
 
