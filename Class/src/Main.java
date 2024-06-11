@@ -66,6 +66,7 @@ public class Main {
                     System.out.println("Information about all cars:");
                     for (Car car : cars) {
                         car.getVehicleInfo();
+                        car.run();
                         System.out.println("----------------------------------------------------");
                     }
                     break;

@@ -13,6 +13,12 @@ public class Car extends Vehicle {
 
 
     @Override
+    public void run() {
+        System.out.println("Car is fast because it is powered by enging!!");
+
+    }
+
+    @Override
     public void getVehicleInfo(){
         System.out.println("Numer rejestracyjny: "+ registrationNumber);
         super.getVehicleInfo();
