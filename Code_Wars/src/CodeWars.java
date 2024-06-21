@@ -24,12 +24,17 @@ public class CodeWars {
                 {63, 66, 4, 68, 89, 53, 67, 30, 73, 16, 69, 87, 40, 31},
                 {4, 62, 98, 27, 23, 9, 70, 98, 73, 93, 38, 53, 60, 4, 23},
         };
-        PyramidSlideDown.findMaxPathSum(test);
+        //PyramidSlideDown.findMaxPathSum(test);
 
 
         List<String> JosephusArray = new ArrayList<>(List.of("s", "w", "b", "H", "d", "o", "p", "l", "n", "r"));
         //JosephusPermutation.josephusPermutation(JosephusArray, 3);
+        String test1 = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+        //AlphanumericTest.alphanumeric(test1);
 
-
+        Object[] haystack = { "junk", "more junk", new String("needle"), "gadget" };
+        //FindingWord.findNeedle(haystack);
+        //RomanNumeralsEncoder.conversion(1666 );
+        CountingCharacters.count("kokos");
     }
 }
