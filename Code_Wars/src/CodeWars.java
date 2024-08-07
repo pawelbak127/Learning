@@ -1,4 +1,6 @@
+import java.awt.*;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class CodeWars {
@@ -27,7 +29,7 @@ public class CodeWars {
         //PyramidSlideDown.findMaxPathSum(test);
 
 
-        List<String> JosephusArray = new ArrayList<>(List.of("s", "w", "b", "H", "d", "o", "p", "l", "n", "r"));
+        List<String> JosephusArray = new ArrayList<>(List.of("s", "5", "b", "H", "d", "34234", "p", "l", "n", "r"));
         //JosephusPermutation.josephusPermutation(JosephusArray, 3);
         String test1 = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
         //AlphanumericTest.alphanumeric(test1);
@@ -35,6 +37,25 @@ public class CodeWars {
         Object[] haystack = { "junk", "more junk", new String("needle"), "gadget" };
         //FindingWord.findNeedle(haystack);
         //RomanNumeralsEncoder.conversion(1666 );
-        CountingCharacters.count("kokos");
+        //CountingCharacters.count("kokos");
+
+        //LargeFactorials.Factorial(16);
+
+
+        List<Point> points = Arrays.asList(
+                new Point(2, 2), //A
+                new Point(2, 8), //B
+                new Point(5, 5), //C
+                new Point(6, 3), //D
+                new Point(6, 7), //E
+                new Point(7, 4), //F
+                new Point(7, 9)  //G
+        );
+
+        //DeadFish.parse("iiisdosodddddiso");
+
+        int[] numbers = {1, 3, 5, 9, 11};
+        FirstNonRepeatingChar.firstNonRepeatingLetter("moonmoon");
+
     }
 }
