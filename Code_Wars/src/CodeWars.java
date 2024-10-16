@@ -54,8 +54,17 @@ public class CodeWars {
 
         //DeadFish.parse("iiisdosodddddiso");
 
-        int[] numbers = {1, 3, 5, 9, 11};
-        FirstNonRepeatingChar.firstNonRepeatingLetter("moonmoon");
+        int[] numbers = {1, 3, 5, 9, -11};
+        //FirstNonRepeatingChar.firstNonRepeatingLetter("moonmoon");
 
+        //SmallestIntegerFinder.findSmallestInt(numbers);
+        //FindLast.last("NOWAK");
+        //Order.order("is2 Thi1s T4est 3a");
+        //Banjo.areYouPlayingBanjo("Robert");
+        final List<Integer> case1 = new ArrayList<>(Arrays.asList(5, 1, 2, 3, 4));
+        PancakeFlip.flipPancakes(case1);
     }
+
+
+
 }
